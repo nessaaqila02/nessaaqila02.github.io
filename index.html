@@ -1,1 +1,130 @@
-halo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="menu.css">
+    <title>Boba Drink</title>
+</head>
+<body>
+    <section class="menu section bd-container" id="menu">
+        <h2 class="section-title">Welcome To Yasmin Boba</h2>
+
+        <div class="menu__container bd-grid">
+            <div class="menu__content">
+                <img src="images/boba03.png" alt="" class="menu__img">
+                <h3 class="menu__name">Strawberry</h3>
+                <span class="menu__detail">Boba Milk</span>
+                <span class="menu__price">Rp.35000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+            <div class="menu__content">
+                <img src="images/coffe.png" alt="" class="menu__img">
+                <h3 class="menu__name">Coffe</h3>
+                <span class="menu__detail">Boba Milk</span>
+                <span class="menu__price">Rp.25000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+                
+            </div>
+            
+            <div class="menu__content">
+                <img src="images/mango.png" alt="" class="menu__img">
+                <h3 class="menu__name">Mango Pearl</h3>
+                <span class="menu__detail">Boba Squash</span>
+                <span class="menu__price">Rp.20000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+            <div class="menu__content">
+                <img src="images/brown.png" alt="" class="menu__img">
+                <h3 class="menu__name">Brown Sugar</h3>
+                <span class="menu__detail">Boba Milk</span>
+                <span class="menu__price">Rp.30000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+            <div class="menu__content">
+                <img src="images/matcha.png" alt="" class="menu__img">
+                <h3 class="menu__name">Matcha Pearl</h3>
+                <span class="menu__detail">Boba Milk</span>
+                <span class="menu__price">Rp.35000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+            <div class="menu__content">
+                <img src="images/grape.png" alt="" class="menu__img">
+                <h3 class="menu__name">Grape Pearl</h3>
+                <span class="menu__detail">Boba Squash</span>
+                <span class="menu__price">Rp.20000</span>
+                <button class="button menu__button" type="button"><i class='bx bx-cart-alt'></i></button>
+            </div>
+
+        </div>
+    <section class="container content-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Item</span>
+            <span class="cart-price cart-header cart-column">Price</span>
+            <span class="cart-quantity cart-header cart-column">Quantity</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rp.0</span>
+        </div>
+        <button class="btn btn-purchase" type="button">Purchase</button>
+        </section>   
+        
+         <!--Konten LIFF v2-->
+ 
+         <div id="liffAppContent">
+            <!-- ACTION BUTTONS -->
+            <div class="buttonGroup">
+                <div class="buttonRow">
+                    <button id="openWindowButton" class="btn btn-success btn-small">Open External Window</button>
+                    <button id="sendMessageButton" class="btn btn-warning btn-small">Send Message</button>
+                </div>
+ 
+            </div>
+           
+            <!-- LOGIN LOGOUT BUTTONS -->
+            <div class="buttonGroup">
+                <button id="liffLoginButton" class="btn btn-success btn-small">Log in</button>
+                <button id="liffLogoutButton" class="btn btn-warning btn-small">Log out</button>
+            </div>
+
+             <!-- LIFF DATA -->
+             <div id="liffData">
+                <h3 id="liffDataHeader" class="textLeft">Informasi:</h3>
+                <table>
+                    <tr>
+                        <th>isInClient : </th>
+                        <td id="isInClient" class="textLeft"></td>
+                    </tr>
+                    <tr>
+                        <th>isLoggedIn : </th>
+                        <td id="isLoggedIn" class="textLeft"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="statusMessage">
+                <div id="isInClientMessage"></div>
+                <div id="apiReferenceMessage">
+                    <p>Available LIFF methods vary depending on the browser you use to open the LIFF app.</p>
+                    <p>Please refer to the <a
+                            href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">API reference
+                            page</a> for more information.</p>
+                </div>
+            </div>
+        </div>
+
+    
+</body>
+<script src="menu.js"></script>
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script src="liff.js"></script>
+</html>
